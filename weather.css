@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s ease;
+    text-decoration: none !important;
+}
+
+
+/* CSS variables declaration */
+:root{
+    --maxContainerWidth: 68rem;
+    --maxContainerHeight: 42rem;
+    /* --mainBackgroundColor: #63ECF1; */
+    --mainBackgroundColorHover: #12aff2; 
+    --mainBackgroundColor:#38c1fc;
+    --borderRadius: 2rem;
+    --imageBackgroundColor: #EBECF0;
+    --blackColor: #191919;
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+    overflow-x: hidden;
+    color: var(--blackColor);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    height: 100vh;
+    width:100vw;
+    background-color: var(--mainBackgroundColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo{
+    /* background-color: red; */
+    transform: rotate(10deg);
+    height: 21rem;
+}
+
+.page{
+    background-color: white;
+    height: var(--maxContainerHeight);
+    width: var(--maxContainerWidth);
+    border-radius: var(--borderRadius);
+    padding:2rem;
+}
+
+.welcome-page{
+    display: flex;
+
+}
+
+.image-container{
+    height: 100%;
+    width: 50%;
+    background-color: var(--imageBackgroundColor);
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+button.main-button {
+    border:none;
+    outline: none;
+    height: 2.6rem;
+    width: 7rem;
+    border-radius: var(--borderRadius);
+    background-color: var(--mainBackgroundColor);
+    color: white;
+    font-weight: 500;
+}
+
+button.main-button:hover{
+    background-color: var(--mainBackgroundColorHover);
+}
+
+.welcome-desc > p , .page-para{
+    color:rgb(179, 179, 179);
+}
+
+.welcome-contents , .login-contents , .signup-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width:50%;
+}
+
+.welcome-contents{
+    text-align: center;
+}
+
+.login-contents{
+    text-align: left !important;
+}
+
+.welcome-desc{
+    margin-top: 0.5rem;
+}
+
+button.welcome{
+    margin-top: 2.5rem;
+}
+
+
+/* Login Page design */
+.login-img-container {
+    background-color: rgb(255, 231, 231);
+}
+.anchor-signup {
+    color: var(--mainBackgroundColorHover);
+}
+
+.form-inputs{
+    /* border: 1px solid var(--mainBackgroundColor); */
+    border:none;
+    font-weight: 400;
+    outline:none;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    height: 3.5rem;
+    width: 100%;
+    background-color:rgb(246, 246, 246);
+    color: rgb(68, 68, 68);
+    font-size: 1rem;
+}
+::-webkit-input-placeholder{
+    color: rgb(179, 179, 179);
+}
+
+.form {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap:10px;
+    margin-top:1.5rem ;
+    margin-bottom: 1rem;
+}
+
+.login-btn{
+    margin-top: 1.5rem;
+}
+
+.search-btn{
+    border-radius: 2rem !important;
+    height: 3.5rem !important;
+    font-size: 1.1rem;
+}
+.user-profile {
+    background-color: var(--imageBackgroundColor) !important;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user-profile:hover {
+    background-color: rgb(231, 231, 231) !important;
+}
+
+.weather-upper-section {
+    display: flex;
+    gap:2rem;
+    /* justify-content: center; */
+    align-items: center;
+    width: auto !important;
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+    width:100%;
+    gap:0.8rem;
+}
+
+::-webkit-search-cancel-button{
+    display: none;
+}
+
+.weather-info> h1{
+    font-size: 3rem !important;
+}
+
+.weather-info > p{
+    color:rgb(179, 179, 179);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-info{
+    /* text-align: center; */
+    margin-top: 2rem;
+ 
+}
+.weather-current-image{
+    height: 15rem;
+}
+.home-content-header{
+    padding: 0 8rem;
+    /* align-items: ; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.air-data{
+    font-size: 2rem;
+}
+
+.air-condition-container > p {
+    color:rgb(179, 179, 179);
+}
+
+.temperature {
+    color:rgb(179, 179, 179);
+    font-weight: 500;
+}
+
+.air-condition-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(246, 246, 246);
+    border-radius: var(--borderRadius);
+    padding:2rem 2rem 2rem 2rem;
+    gap:2rem;
+    width: auto !important;
+}
+
+.weather-condition-section{
+    display: flex;
+    gap:8rem;
+}
+
+.weather-condition-section > span{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.air-condition-container-parent{
+    width: 100%;
+    padding: 2rem 6rem;
+}
+
+.city-temperature{
+    font-size: 2.8rem !important;
+    font-weight: 500;
+}
+
+.user-profile-section{
+    position: relative;
+}
+.user-click-logout{
+    background-color: gray;
+    position: absolute;
+    display: none;
+    z-index: 999; 
+    cursor: pointer;
+    height: 2rem;
+    left:-1rem;
+    bottom:-2.5rem;
+}
+
+.user-profile-section:hover > .user-click-logout{
+    display: block !important;
+}
+
+
+.weather-page{
+    position: relative;
+}
+.loader{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    /* background-color: rgb(0, 0, 0); */
+    position: absolute;
+    top:40%;
+    left:47%;
+    /* display: none; */
+    border:13px solid var(--mainBackgroundColorHover);
+    border-top-color: rgb(0, 141, 196);
+    animation: spin 1s infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

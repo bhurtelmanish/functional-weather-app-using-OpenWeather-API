@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Weather app</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="shortcut icon" href="../assets/images/umbrella-logo.png" type="image/x-icon">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div class="weather-page page">
+                <div class="weather-upper-section">
+                    <div class="user-profile-section">   
+                        <img src="./images/user-profile.png" alt="" class="user-profile">
+                        <!-- <button class="user-click-logout main-button">Log out</button> -->
+                    </div>
+                    <div class="search-section">
+                        <input type="search" name="search" class="search-bar form-inputs" id="search" placeholder="Search your city">
+                         <button class="search-btn main-button">Search</button>
+                    </div>
+                </div>
+
+                <div class="loader"></div>
+
+                <div class="home-content-header">
+                    <div class="weather-info">
+                        <h1 class="city-name"></h1>
+                        <p class="city-description">Description: <span class="city-description-display"></span></p>
+                        <span class="city-temperature"></span>
+                    </div>
+
+                    <!-- <img src="../assets/images/login-image.png" class="weather-current-image" alt=""> -->
+                    <div class="image-current-weather"></div>
+                </div>
+
+                <div class="air-condition-container-parent">
+                    <div class="air-condition-container">
+                        <p class="temperature">AIR CONDITIONS</p>
+    
+                        <div class="weather-condition-section">
+                            <span>
+                                <div class="air-data1 air-data-main">
+                                    <p class="temperature">Real Feel</p>
+                                    <h1 class="air-data real-feel"></h1>
+                                </div>
+                                <div class="air-data2 air-data-main">
+                                    <p class="temperature">Chances of rain</p>
+                                    <h1 class="air-data rain"></h1>
+                                </div>
+                            </span>
+                            <span>
+                                <div class="air-data3 air-data-main">
+                                    <p class="temperature">Wind</p>
+                                    <h1 class="air-data wind-speed"></h1>
+                                </div>
+                                <div class="air-data4 air-data-main">
+                                    <p class="temperature">Wind Deg</p>
+                                    <h1 class="air-data wind-degree"></h1>
+                                </div>
+                            </span>
+
+                            <span>
+                                <div class="air-data3 air-data-main">
+                                    <p class="temperature">Humidity</p>
+                                    <h1 class="air-data humidity"></h1>
+                                </div>
+                                <div class="air-data4 air-data-main">
+                                    <p class="temperature">Pressure</p>
+                                    <h1 class="air-data pressure"></h1>
+                                </div>
+                            </span>
+
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
